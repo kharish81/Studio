@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kharish81/Studio.git/static/css/main.190ff9a3.css",
-    "main.js": "/kharish81/Studio.git/static/js/main.aa8986ca.js",
+    "main.js": "/kharish81/Studio.git/static/js/main.ba27f5a2.js",
     "static/js/453.ed3810f9.chunk.js": "/kharish81/Studio.git/static/js/453.ed3810f9.chunk.js",
     "index.html": "/kharish81/Studio.git/index.html",
     "main.190ff9a3.css.map": "/kharish81/Studio.git/static/css/main.190ff9a3.css.map",
-    "main.aa8986ca.js.map": "/kharish81/Studio.git/static/js/main.aa8986ca.js.map",
+    "main.ba27f5a2.js.map": "/kharish81/Studio.git/static/js/main.ba27f5a2.js.map",
     "453.ed3810f9.chunk.js.map": "/kharish81/Studio.git/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.190ff9a3.css",
-    "static/js/main.aa8986ca.js"
+    "static/js/main.ba27f5a2.js"
   ]
 }
