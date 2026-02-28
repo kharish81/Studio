@@ -15,7 +15,6 @@ public class Demo {
         }
 		Branch__c b1=new Branch__c(No_of_Students__c=count);   
             insert b1;
-            System.debug(b1);
         }   
     }
     }
