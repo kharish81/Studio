@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Submitted Account Information" icon-name="standard:account">
+        <div class="slds-p-horizontal_medium slds-p-vertical_small">
+            <lightning-record-view-form
+                record-id={recordId}
+                object-api-name="Student__c">
+
+                <lightning-output-field field-name="Name"></lightning-output-field>
+                <lightning-output-field field-name="Year__c"></lightning-output-field>
+                <lightning-output-field field-name="Branch__c"></lightning-output-field>
+
+            </lightning-record-view-form>
+
+            <div class="slds-m-top_medium">
+                <lightning-button label="Edit" onclick={handleEditClick}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

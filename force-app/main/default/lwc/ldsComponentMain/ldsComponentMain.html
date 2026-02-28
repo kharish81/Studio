@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Account Record Viewer">
+        <template if:false={isEditMode}>
+            <c-lds-component-a record-id={recordId} onedit={handleEdit}></c-lds-component-a>
+        </template>
+
+        <template if:true={isEditMode}>
+            <c-lds-component-b 
+                record-id={recordId} 
+                onsuccess={handleSuccess} 
+                oncancel={handleCancel}>
+            </c-lds-component-b>
+        </template>
+    </lightning-card>
+</template>

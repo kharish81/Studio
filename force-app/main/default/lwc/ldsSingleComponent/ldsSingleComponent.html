@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Account Record" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <template if:false={isShow}>
+            <lightning-record-view-form record-id={recordId} object-api-name="Student__c">
+                <lightning-output-field field-name="Name"></lightning-output-field>
+                <lightning-output-field field-name="Year__c"></lightning-output-field>
+                <lightning-output-field field-name="Branch__c"></lightning-output-field>
+            </lightning-record-view-form>
+            
+            <lightning-button label="Edit" onclick={handleClick} class="slds-m-top_medium"></lightning-button>
+            </template>
+
+            <template if:true={isShow}>
+                <lightning-record-edit-form record-id={recordId} object-api-name="Student__c" onsuccess={handleSuccess}>
+                    <lightning-input-field field-name="Name"></lightning-input-field>
+                    <lightning-input-field field-name="Year__c"></lightning-input-field>
+                    <lightning-input-field field-name="Branch__c"></lightning-input-field>
+                    <lightning-button class="slds-m-top_medium" type="submit" label="Save" variant="brand"></lightning-button>
+                    <lightning-button class="slds-m-top_medium" label="Cancel" onclick={handleCancel} variant="neutral"></lightning-button>
+                </lightning-record-edit-form>
+            </template>
+        </div>
+    </lightning-card>
+</template>

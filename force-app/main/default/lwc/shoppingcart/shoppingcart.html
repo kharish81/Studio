@@ -1,0 +1,19 @@
+<template>
+    <div class="products-container">
+                    
+                <template for:each={cartItems} for:item="item">
+                    <div key={item.id} class="cart-item">
+                        <div class="item-info">
+                            <p class="item-name">{item.name}</p>
+                            <p class="item-price">${item.price}</p>
+                        </div>
+                        <div class="item-controls">
+                            <button onclick={decreaseQuantity} data-id={item.id}>-</button>
+                            <span>{item.quantity}</span>
+                            <button onclick={increaseQuantity} data-id={item.id}>+</button>
+                            <button class="remove-btn" onclick={removeItem} data-id={item.id}>Remove</button>
+                        </div>
+                    </div>
+                </template>
+    </div>
+</template>
